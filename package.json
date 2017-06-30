@@ -1,6 +1,6 @@
 {
   "name": "@jaredhenry/justapieceof",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Simple command line tool to take just a piece of a large file.",
   "main": "index.js",
   "repository": {
