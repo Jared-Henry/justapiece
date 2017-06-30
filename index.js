@@ -1,5 +1,6 @@
 const fs = require('fs');
 const readline = require('readline');
+const os = require('os');
 const args = require('command-line-args');
 const usage = require('command-line-usage');
 
@@ -40,7 +41,7 @@ let optionsList = [
 
 let usageSections = [
     {
-        header: 'justapiece',
+        header: 'justapieceof',
         content: 'Takes just a piece of a large file.'
     },
     {
@@ -69,6 +70,7 @@ reader.on('line', line => {
     }
     else {
         output.write(line);
+        output.write(os.EOL);
         taken++;
         if (taken >= options.take) {
             process.exit(0);
